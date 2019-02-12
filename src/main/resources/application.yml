@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: ht-eureka-server
+
+eureka:
+  instance:
+    preferIpAddress: true
+  server:
+    response-cache-update-interval-ms: 1000
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 4000
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
